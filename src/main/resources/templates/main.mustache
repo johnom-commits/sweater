@@ -2,7 +2,14 @@
 <html lang="">
 
 <body>
-<div>{{some}}</div>
+<div>Список сообщений</div>
+    {{#message}}
+        <div>
+           <b>{{id}}</b>
+            <span>{{text}}</span>
+            <i>{{tag}}</i>
+        </div>
+    {{/message}}
 </body>
 
 </html>
