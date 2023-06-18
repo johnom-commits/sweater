@@ -2,6 +2,6 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost/sweater
     username: postgres
-    password: john
+    password: docker
   jpa:
     generate-ddl: true

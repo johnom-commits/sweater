@@ -2,14 +2,25 @@
 <html lang="">
 
 <body>
-<div>Список сообщений</div>
-    {{#message}}
-        <div>
-           <b>{{id}}</b>
-            <span>{{text}}</span>
-            <i>{{tag}}</i>
-        </div>
-    {{/message}}
+    <div>
+        <form method="post">
+            <input type="text" name="text" placeholder="Enter a message" />
+            <input type="text" name="tag" placeholder="Tag">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+<div>List of messages</div>
+    <form method="post" action="filter">
+       <input type="text" name="filter">
+        <button type="submit">Find</button>
+    </form>
+{{#message}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{text}}</span>
+        <i>{{tag}}</i>
+    </div>
+{{/message}}
 </body>
 
 </html>
